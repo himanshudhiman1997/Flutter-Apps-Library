@@ -27,7 +27,7 @@ class _MyAppState extends State<MyApp> {
         _isAuthenticating = true;
       });
       authenticated = await localAuthentication.authenticateWithBiometrics(
-          localizedReason: 'Success will change the background picture',
+          localizedReason: 'Success will change the background color',
           useErrorDialogs: true);
       setState(() {
         _isAuthenticating = false;
