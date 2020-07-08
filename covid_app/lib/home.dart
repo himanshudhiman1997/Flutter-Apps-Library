@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
-import 'package:neumorphic/neumorphic.dart';
+import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -27,6 +27,9 @@ class _HomeState extends State<Home> {
     Color yellowTextColor = Color(0XFFFFDE03);
     Size screenSize = MediaQuery.of(context).size;
     const darkBlue = Color(0XFF1A36CF);
+
+
+    FlutterStatusbarcolor.setStatusBarColor(Color(0xFF8fd0db));
     return Scaffold(
         body: SafeArea(
       child: Container(
@@ -37,46 +40,14 @@ class _HomeState extends State<Home> {
         child: Center(
           child: Column(
             children: <Widget>[
-              // Padding(
-              //   padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-              //   child: NeuCard(
-              //     bevel: 5,
-              //     color: darkBlue,
-              //     width: screenSize.width,
-              //     height: screenSize.height * 0.2,
-              //     curveType: CurveType.flat,
-              //     child: Image(
-              //       image: AssetImage(
-              //         'assets/images/corona_back.png',
-              //       ),
-              //       fit: BoxFit.cover,
-              //     ),
-              //   ),
-              // ),
-              // Padding(
-              //   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              //   child: Text(
-              //     'Global Status',
-              //     style: TextStyle(
-              //         fontSize: 20,
-              //         fontWeight: FontWeight.bold,
-              //         color: darkBlue),
-              //   ),
-              // ),
-              // Padding(
-              //   padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              //   child: NeuTextField(
-              //     decoration: InputDecoration(
-              //       labelText: 'Enter the country name',
-              //       border: OutlineInputBorder(),
-              //     ),
-              //   ),
-              // ),
               Padding(
                 padding: EdgeInsets.only(top: 50),
                 child: Text(
-                  'COVID19',
-                  style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 24),
+                  'COVID 19',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28),
                 ),
               ),
               Padding(
@@ -101,7 +72,7 @@ class _HomeState extends State<Home> {
                         dropdownValue = newValue;
                       });
                     },
-                    items: <String>['India', 'Pakistan', 'America', 'Nepal']
+                    items: <String>['India', 'Egypt', 'America', 'Nepal']
                         .map<DropdownMenuItem<String>>((String value) {
                       return DropdownMenuItem<String>(
                         value: value,
@@ -221,8 +192,8 @@ class _HomeState extends State<Home> {
                     Padding(
                       padding: EdgeInsets.only(top: 10, bottom: 20),
                       child: Text(
-                        'Precautions',
-                        style: TextStyle(color: Colors.black, fontSize: 18),
+                        'PRECAUTIONS',
+                        style: TextStyle(color: Colors.black, fontSize: 20),
                       ),
                     ),
                     Row(
@@ -279,69 +250,6 @@ class _HomeState extends State<Home> {
                   ],
                 ),
               )
-              // Padding(
-              //     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-              //     child: Row(
-              //       children: <Widget>[
-              //         Padding(
-              //           padding: EdgeInsets.only(right: 10),
-              //           child: NeuCard(
-              //             child: Center(
-              //                 child: Text(
-              //               '99999',
-              //               style: TextStyle(
-              //                   color: Colors.white,
-              //                   fontWeight: FontWeight.bold),
-              //             )),
-              //             curveType: CurveType.flat,
-              //             bevel: 2,
-              //             decoration: NeumorphicDecoration(
-              //                 borderRadius: BorderRadius.circular(8),
-              //                 color: Colors.yellow),
-              //             height: 100,
-              //             width: 100,
-              //           ),
-              //         ),
-              //         Padding(
-              //           padding: EdgeInsets.only(right: 10),
-              //           child: NeuCard(
-              //             child: Center(
-              //                 child: Text(
-              //               '99999',
-              //               style: TextStyle(
-              //                   color: Colors.white,
-              //                   fontWeight: FontWeight.bold),
-              //             )),
-              //             curveType: CurveType.flat,
-              //             bevel: 2,
-              //             decoration: NeumorphicDecoration(
-              //                 borderRadius: BorderRadius.circular(8),
-              //                 color: Colors.red),
-              //             height: 100,
-              //             width: 100,
-              //           ),
-              //         ),
-              //         Padding(
-              //           padding: EdgeInsets.only(right: 0),
-              //           child: NeuCard(
-              //             child: Center(
-              //                 child: Text(
-              //               '99999',
-              //               style: TextStyle(
-              //                   color: Colors.white,
-              //                   fontWeight: FontWeight.bold),
-              //             )),
-              //             curveType: CurveType.flat,
-              //             bevel: 2,
-              //             decoration: NeumorphicDecoration(
-              //                 borderRadius: BorderRadius.circular(8),
-              //                 color: Colors.green),
-              //             height: 100,
-              //             width: 100,
-              //           ),
-              //         )
-              //       ],
-              //     )),
             ],
           ),
         ),
