@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_circular_chart/flutter_circular_chart.dart';
 import 'package:flutter_statusbarcolor/flutter_statusbarcolor.dart';
+import './CommonUtils/palette.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -12,21 +13,17 @@ class _HomeState extends State<Home> {
   List<CircularStackEntry> data = <CircularStackEntry>[
     new CircularStackEntry(
       <CircularSegmentEntry>[
-        new CircularSegmentEntry(500.0, Color(0XFFE53935), rankKey: 'Q1'),
-        new CircularSegmentEntry(1000.0, Color(0XFF76FF03), rankKey: 'Q2'),
-        new CircularSegmentEntry(2000.0, Color(0XFFFFDE03), rankKey: 'Q3'),
+        new CircularSegmentEntry(500.0, Palette.redTextColor, rankKey: 'Q1'),
+        new CircularSegmentEntry(1000.0, Palette.greenTextColor, rankKey: 'Q2'),
+        new CircularSegmentEntry(2000.0, Palette.yellowTextColor, rankKey: 'Q3'),
       ],
-      rankKey: 'Quarterly Profits',
+      rankKey: 'Covid data',
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
-    Color redTextColor = Color(0XFFE53935);
-    Color greenTextColor = Color(0XFF76FF03);
-    Color yellowTextColor = Color(0XFFFFDE03);
     Size screenSize = MediaQuery.of(context).size;
-    const darkBlue = Color(0XFF1A36CF);
 
 
     FlutterStatusbarcolor.setStatusBarColor(Color(0xFF8fd0db));
@@ -61,11 +58,11 @@ class _HomeState extends State<Home> {
                     iconSize: 20,
                     elevation: 16,
                     isExpanded: true,
-                    style: TextStyle(color: darkBlue, fontSize: 20),
+                    style: TextStyle(color: Palette.darkBlue, fontSize: 20),
                     underline: Container(
                       width: screenSize.width,
                       height: 2,
-                      color: darkBlue,
+                      color: Palette.darkBlue,
                     ),
                     onChanged: (String newValue) {
                       setState(() {
@@ -130,7 +127,7 @@ class _HomeState extends State<Home> {
                                       Text(
                                         '3234',
                                         style: TextStyle(
-                                            color: yellowTextColor,
+                                            color: Palette.yellowTextColor,
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
@@ -152,7 +149,7 @@ class _HomeState extends State<Home> {
                                       Text(
                                         '554',
                                         style: TextStyle(
-                                            color: greenTextColor,
+                                            color: Palette.greenTextColor,
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
@@ -174,7 +171,7 @@ class _HomeState extends State<Home> {
                                       Text(
                                         '823',
                                         style: TextStyle(
-                                            color: redTextColor,
+                                            color: Palette.redTextColor,
                                             fontWeight: FontWeight.bold,
                                             fontSize: 18),
                                       )
@@ -200,8 +197,8 @@ class _HomeState extends State<Home> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Container(
-                          width: 115,
-                          height: 115,
+                          width: screenSize.width * 0.28,
+                          height: screenSize.width * 0.28,
                           child: Card(
                             semanticContainer: true,
                             clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -215,8 +212,8 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         Container(
-                          width: 115,
-                          height: 115,
+                          width: screenSize.width * 0.28,
+                          height: screenSize.width * 0.28,
                           child: Card(
                             semanticContainer: true,
                             clipBehavior: Clip.antiAliasWithSaveLayer,
@@ -230,8 +227,8 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         Container(
-                          width: 115,
-                          height: 115,
+                          width: screenSize.width * 0.28,
+                          height: screenSize.width * 0.28,
                           child: Card(
                             semanticContainer: true,
                             clipBehavior: Clip.antiAliasWithSaveLayer,
