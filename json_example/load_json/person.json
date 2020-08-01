@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Himanshu",
+        "age": "22",
+        "height": 185,
+        "gender": "male"
+    },
+    {
+        "name": "Nitish",
+        "age": "21",
+        "height": 183,
+        "gender": "male"
+    },
+    {
+        "name": "Rahul",
+        "age": "22",
+        "height": 181,
+        "gender": "male"
+    },
+    {
+        "name": "Divyam",
+        "age": "23",
+        "height": 178,
+        "gender": "male"
+    }
+]
