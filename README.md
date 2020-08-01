@@ -2,13 +2,12 @@
 
 ### covid_app output:
 
-![Covid App Output](images/covid_ouput.png =250x450)
+<img src="images/covid_output.png" alt="Covid App Output" width="250" height="450">
 
 ### frenzy_chat_app output:
 
-![Frenzy Chat App Output](images/frenzy_ouput.png =250x450)
+<img src="images/frenzy_output.png" alt="Frenzy Chat App Output" width="250" height="450">
 
 ### json_example output:
 
-![Json Example App Output](images/json_ouput.png =250x450)
-<img src="images/json_ouput.png" width="100" height="100">
+<img src="images/json_output.png" alt="Json Example App Output" width="250" height="450">

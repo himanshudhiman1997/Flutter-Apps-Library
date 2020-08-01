@@ -11,6 +11,6 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 
 
-Output: 
+## Output: 
 
-![Covid App Output](assets/images/covid_ouput.png =250x450)
+<img src="assets/images/covid_output.png" alt="Covid App Output" width="250" height="450">
