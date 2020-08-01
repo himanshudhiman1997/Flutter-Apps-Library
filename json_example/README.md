@@ -12,4 +12,4 @@ A few resources to get you started if this is your first Flutter project:
 
 ## Output
 
-![Final Output](images/output.png)
+![Final Output](images/json_output.png =250x450)
