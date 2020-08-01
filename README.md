@@ -11,3 +11,4 @@
 ### json_example output:
 
 ![Json Example App Output](images/json_ouput.png =250x450)
+<img src="images/json_ouput.png" width="100" height="100">
